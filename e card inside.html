@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Medora e-Card</title>
+  <link rel="stylesheet" href="ecard.css">
+</head>
+<body>
+  <div class="ecard-container">
+    <div class="ecard">
+      <div class="ecard-header">
+        <img src="https://i.imgur.com/5xhcCcc.png" alt="Medora Logo" class="logo">
+        <h2>Medora Health e-Card</h2>
+      </div>
+
+      <div class="ecard-body">
+        <img src="https://i.imgur.com/OZaT7jl.png" alt="User Photo" class="user-photo">
+        <div class="ecard-info">
+          <p><strong>Name:</strong> John Doe</p>
+          <p><strong>Patient ID:</strong> MDRA-102938</p>
+          <p><strong>Blood Group:</strong> B+</p>
+          <p><strong>DOB:</strong> 01 Jan 1990</p>
+          <p><strong>Phone:</strong> +91 98765 43210</p>
+          <p><strong>Email:</strong> johndoe@email.com</p>
+        </div>
+        <div class="qr-code">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?data=MDRA-102938&size=120x120" alt="QR Code">
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.ecard-container {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  width: 420px;
+  padding: 30px;
+}
+
+.ecard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ecard-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ecard-header .logo {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.ecard-header h2 {
+  font-size: 1.6rem;
+  color: #2d3436;
+}
+
+.ecard-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #27ae60;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.ecard-info {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.ecard-info p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color: #2f3542;
+}
+
+.qr-code img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+  </style>
+</body>
+</html>
