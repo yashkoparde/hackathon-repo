@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Patient Dashboard - Medora</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="logo">🩺 Medora</div>
+      <nav>
+        <a href="#" class="active"><i class="fas fa-home"></i> Dashboard</a>
+        <a href="#"><i class="fas fa-notes-medical"></i> Prescriptions</a>
+        <a href="#"><i class="fas fa-calendar-check"></i> Appointments</a>
+        <a href="#"><i class="fas fa-file-alt"></i> My Reports</a>
+        <a href="#"><i class="fas fa-headset"></i> Support</a>
+        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="title">Welcome, <span id="userName">Patient</span></div>
+        <div class="user">
+          <img src="https://i.pravatar.cc/40?u=patient" alt="profile">
+          <span id="userDisplay">Patient</span>
+        </div>
+      </header>
+
+      <section class="cards">
+        <div class="card">
+          <i class="fas fa-pills icon"></i>
+          <h3>Medications</h3>
+          <p>4 Active</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-calendar-check icon"></i>
+          <h3>Appointments</h3>
+          <p>1 Upcoming</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-heartbeat icon"></i>
+          <h3>Vitals</h3>
+          <p>Stable</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-comment-medical icon"></i>
+          <h3>Messages</h3>
+          <p>2 New</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const patientName = "John Doe";
+    document.getElementById("userName").textContent = patientName;
+    document.getElementById("userDisplay").textContent = patientName;
+  </script>
+</body>
+</html>

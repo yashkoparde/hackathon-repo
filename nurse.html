@@ -1,0 +1,57 @@
+Nurse dash
+
+<!-- Same head and styles -->
+<link rel="stylesheet" href="style.css"/>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="logo">🩺 Medora</div>
+      <nav>
+        <a href="#" class="active"><i class="fas fa-home"></i> Dashboard</a>
+        <a href="#"><i class="fas fa-user-injured"></i> Assigned Patients</a>
+        <a href="#"><i class="fas fa-clipboard-check"></i> Vitals</a>
+        <a href="#"><i class="fas fa-clock"></i> Shift Schedule</a>
+        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="title">Welcome, <span id="userName">Nurse</span></div>
+        <div class="user">
+          <img src="https://i.pravatar.cc/40?u=nurse" alt="profile">
+          <span id="userDisplay">Nurse</span>
+        </div>
+      </header>
+
+      <section class="cards">
+        <div class="card">
+          <i class="fas fa-user-injured icon"></i>
+          <h3>Patients</h3>
+          <p>5 Assigned</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-thermometer-half icon"></i>
+          <h3>Vitals Checked</h3>
+          <p>12 Today</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-bell icon"></i>
+          <h3>Alerts</h3>
+          <p>2 Pending</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-clock icon"></i>
+          <h3>Shifts</h3>
+          <p>8AM - 4PM</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const nurseName = "Nurse Priya";
+    document.getElementById("userName").textContent = nurseName;
+    document.getElementById("userDisplay").textContent = nurseName;
+  </script>
+</body>

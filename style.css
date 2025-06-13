@@ -1,0 +1,873 @@
+.main{
+    height:100vh;
+    width:100vw;
+    position: relative;
+    display: flex;
+    align-items: flex-end; /* Moves text to bottom */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.main::before{
+    background-image: url(image.jpg);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   filter: blur(5px);
+   z-index:0;
+}
+
+.written{
+    background: linear-gradient(to right, rgba(10, 9, 9, 0.95), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  padding: 160px 70px;
+  max-width: 550px;
+  color: white;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+}
+
+.text{
+    font-size:60px;
+    margin:0;
+   line-height: 1.1; /* Adjusts space between lines */
+   text-align:left;
+   align-items: flex-start;
+    justify-content: flex-end;
+    font-style:Benguiat Bold;
+    margin-bottom:20px;
+}
+
+
+.para{
+    font-size:15px;
+    text-align: left;
+    font-weight:1px;
+}
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color:#005f50;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color:rgb(35, 34, 34);
+      padding: 10px 30px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    }
+
+    
+
+    .logo a {
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: bold;
+      color: #00796B;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      
+      
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+      color: #00796B;
+    }
+
+    .nav-links a:hover {
+      color: #00796B;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      background-color: #00796B;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #005f50;
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      border: 2px solid #00796B;
+      color: #00796B;
+    }
+
+    .btn-outline:hover {
+      background-color: #00796B;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .nav-links, .nav-buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+/*css for login page*/
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('https://images.unsplash.com/photo-1588776814546-d371512b67c6') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.login-box h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.login-box .highlight {
+  color: #3c8dbc;
+}
+
+.login-box p {
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background-color: #3c8dbc;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-box button:hover {
+  background-color: #2b6b8e;
+}
+
+.signup-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #3c8dbc;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+
+/*css for patient dashbaord*/
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f8fc;
+  color: #333;
+}
+
+/* Layout */
+.dashboard {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background-color: #1E3A5F;
+  color: #fff;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.sidebar nav a {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar nav a i {
+  margin-right: 12px;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background-color: #365E9E;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.topbar .title {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #1E3A5F;
+}
+
+.topbar .user {
+  display: flex;
+  align-items: center;
+  background-color: #e3e9f3;
+  padding: 8px 14px;
+  border-radius: 20px;
+  gap: 10px;
+}
+
+.topbar .user img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.topbar .user span {
+  font-weight: 500;
+  color: #1E3A5F;
+}
+
+/* Cards Section */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #E8EEF7;
+  border-left: 5px solid #365E9E;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card .icon {
+  font-size: 2rem;
+  color: #365E9E;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #1E3A5F;
+}
+
+.card p {
+  font-size: 0.95rem;
+}
+
+/*nusre dashboard*/
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4fcff;
+  color: #333;
+}
+
+/* Layout */
+.dashboard {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background-color: #1565C0;
+  color: #fff;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.sidebar nav a {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar nav a i {
+  margin-right: 12px;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background-color: #1E88E5;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.topbar .title {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #1565C0;
+}
+
+.topbar .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #e1f5fe;
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+.topbar .user img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.topbar .user span {
+  font-weight: 500;
+  color: #1565C0;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #E3F2FD;
+  border-left: 5px solid #1565C0;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card .icon {
+  font-size: 2rem;
+  color: #1E88E5;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #0D47A1;
+}
+
+.card p {
+  font-size: 0.95rem;
+}
+
+/*doctor dashboard*/
+
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fbff;
+  color: #333;
+}
+
+/* Layout */
+.dashboard {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background-color: #234E70;
+  color: #fff;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sidebar nav a {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar nav a i {
+  margin-right: 12px;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background-color: #3F72AF;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #ffffff;
+  overflow-y: auto;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.topbar .title {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #234E70;
+}
+
+.topbar .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #edf2f7;
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+.topbar .user img {
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  object-fit: cover;
+}
+
+.topbar .user span {
+  color: #234E70;
+  font-weight: 500;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #EDF2FB;
+  border-left: 5px solid #3F72AF;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card .icon {
+  font-size: 1.8rem;
+  color: #3F72AF;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  color: #234E70;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 0.95rem;
+}
+
+/*patient dashboard css*/
+/* Patient Dashboard Styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f8ff;
+  color: #333;
+}
+
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #1976D2;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar .logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.sidebar nav a {
+  display: flex;
+  align-items: center;
+  padding: 12px 10px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  transition: background 0.2s ease;
+}
+
+.sidebar nav a i {
+  margin-right: 12px;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background-color: #42a5f5;
+}
+
+.main-content {
+  flex: 1;
+  padding: 25px;
+  background: #ffffff;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.topbar .title {
+  font-size: 1.6em;
+  color: #1976D2;
+}
+
+.topbar .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topbar .user img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #e3f2fd;
+  border-left: 6px solid #1976D2;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card .icon {
+  font-size: 1.8rem;
+  color: #1976D2;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #0d47a1;
+}
+
+.card p {
+  font-size: 0.95rem;
+}
+
+/*register css*/
+
+/* Patient Dashboard Styling */
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e3f2fd, #bbdefb);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.form-box {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.form-box h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #1976d2;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 10px;
+  font-size: 16px;
+  border: 1px solid #90caf9;
+  border-radius: 10px;
+  background: #f0f8ff;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-box input:focus {
+  border-color: #1976d2;
+  background-color: #e3f2fd;
+}
+
+.input-box label {
+  position: absolute;
+  top: -12px;
+  left: 12px;
+  background: #ffffff;
+  padding: 0 5px;
+  font-size: 14px;
+  color: #1976d2;
+  pointer-events: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #1565c0;
+}
+
+.login-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.login-link a {
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
