@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Appointment - Medora</title>
+  <link rel="stylesheet" href="book-appointment.css">
+</head>
+<body>
+  <section class="appointment-section">
+    <div class="appointment-container">
+      <h2>Book an Appointment</h2>
+      <p>Please fill in the details below to schedule your appointment.</p>
+
+      <form class="appointment-form">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+        <label for="date">Appointment Date</label>
+        <input type="date" id="date" required>
+
+        <label for="department">Select Department</label>
+        <select id="department" required>
+          <option value="">-- Choose --</option>
+          <option value="general">General Medicine</option>
+          <option value="cardiology">Cardiology</option>
+          <option value="dermatology">Dermatology</option>
+          <option value="pediatrics">Pediatrics</option>
+          <option value="dentistry">Dentistry</option>
+        </select>
+
+        <label for="doctor">Preferred Doctor</label>
+        <input type="text" id="doctor" placeholder="Optional">
+
+        <label for="message">Additional Message</label>
+        <textarea id="message" rows="4" placeholder="Any symptoms, conditions, or special requests..."></textarea>
+
+        <button type="submit">Book Appointment</button>
+      </form>
+    </div>
+  </section>
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f0f4f8;
+}
+
+.appointment-section {
+  padding: 50px 20px;
+  background-color: #f1f2f6;
+}
+
+.appointment-container {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+.appointment-container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #2f3640;
+}
+
+.appointment-container p {
+  text-align: center;
+  color: #57606f;
+  margin-bottom: 30px;
+}
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.appointment-form label {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #dcdde1;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.appointment-form button {
+  margin-top: 25px;
+  background-color: #27ae60;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.appointment-form button:hover {
+  background-color: #219150;
+}
+  </style>
+</body>
+</html>
