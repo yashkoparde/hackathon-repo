@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Role - Medora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">MEDORA</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Select Your Role</h2>
+    
+
+    <div class="roles">
+      <a href="doctor.html" class="role">
+        <img src="doctor.png" alt="Doctor">
+        <p>Doctor</p>
+      </a>
+      <a href="nurse.html" class="role">
+        <img src="nurse.png" alt="Nurse">
+        <p>Nurse</p>
+      </a>
+      <a href="patient.html" class="role">
+        <img src="patient.png" alt="Patient">
+        <p>Patient</p>
+      </a>
+      <a href="admin.html" class="role">
+        <img src="admin.png" alt="Admin">
+        <p>Admin</p>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
+
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+
+
+.roles {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.role {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.role:hover {
+  transform: scale(1.05);
+}
+
+.role img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: white;
+}
+
+.role p {
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+
+</style>
